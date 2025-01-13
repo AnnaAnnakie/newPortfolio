@@ -1,4 +1,3 @@
-
 .content {
   font-family: "Courier New", Courier, monospace;
   display: flex;
@@ -8,14 +7,9 @@
 }
 
 .content > div {
-  padding: 50px;
-  min-height: calc(100vh - 100px);
+  padding: 4vw;
+  min-height: calc(100vh - 8vw);
   display: flex;
-}
-
-.content > hr {
-  height: 80vh;
-  background-color: var(--Chocolate-cosmos);
 }
 
 h1 {
@@ -52,7 +46,7 @@ h1 {
     width: 87vw;
   }
   .content div {
-    min-height: calc(50vh - 100px);
+    min-height: calc(50vh - 8vw);
   }
   h1 {
     font-size: 7vw;

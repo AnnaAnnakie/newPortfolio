@@ -45,3 +45,21 @@ img {
   margin: auto;
   width: 2.5vw;
 }
+
+@media (orientation: portrait) {
+  #links {
+    width: 13vw;
+  }
+  #triangle {
+    border-left: 6.5vw solid transparent;
+    border-right: 6.5vw solid transparent;
+    border-bottom: 5vw solid white;
+  }
+  img{
+    width: 7vw;
+  }
+  #home{
+    width: 8vw;
+    right: 2.5vw;
+  }
+}

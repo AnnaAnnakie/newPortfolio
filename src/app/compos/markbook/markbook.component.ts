@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-markbook',
-  imports: [],
+    imports: [
+        RouterLink
+    ],
   templateUrl: './markbook.component.html',
   styleUrl: './markbook.component.scss'
 })
