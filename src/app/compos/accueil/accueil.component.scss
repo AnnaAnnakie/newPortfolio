@@ -1,5 +1,4 @@
 .content {
-  font-family: "Courier New", Courier, monospace;
   display: flex;
   padding: 0;
   left: 0;
@@ -19,7 +18,7 @@ h1 {
 
 #div1,
 #div2 {
-  flex: 48%;
+  flex: 50%;
   transition: flex 0.3s ease, transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -46,7 +45,7 @@ h1 {
     width: 87vw;
   }
   .content div {
-    min-height: calc(50vh - 8vw);
+    min-height: calc(50vh - 1vw);
   }
   h1 {
     font-size: 7vw;

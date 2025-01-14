@@ -5,7 +5,7 @@ import {AccueilComponent} from "./compos/accueil/accueil.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MarkbookComponent, AccueilComponent],
+  imports: [RouterOutlet, MarkbookComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
