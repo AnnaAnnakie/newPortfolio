@@ -13,7 +13,7 @@
 
 h1 {
   transition: transform 0.3s ease, opacity 0.3s ease;
-  font-size: 4vw;
+  font-size: 4.5em;
 }
 
 #div1,
@@ -21,24 +21,13 @@ h1 {
   flex: 50%;
   transition: flex 0.3s ease, transform 0.3s ease, filter 0.3s ease;
 }
-
-.content:hover:not(#links) #div1:not(:hover):not(#links) h1,
-.content:hover:not(#links) #div2:not(:hover):not(#links) h1 {
-  transform: scale(0.8);
-  opacity: 0.5;
-}
-
+/*
 .content:hover #div1:hover,
 .content:hover #div2:hover {
-  flex: 60%;
   z-index: 2;
+  font-size: 1.1em;
 }
-
-.content:hover:not(#links) #div1:not(:hover):not(#links),
-.content:hover:not(#links) #div2:not(:hover):not(#links) {
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
-}
-
+*/
 @media (orientation: portrait) {
   .content {
     flex-wrap: wrap;
