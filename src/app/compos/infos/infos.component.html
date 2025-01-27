@@ -1,30 +1,23 @@
 <div class="container">
     <div class="fiftyfifty" id="global">
         <h2>Mes compétences</h2>
+        <div id="prefs">
+            <ul>
+                <li *ngFor="let comp of favComp">
+                    <img src="assets/languages/{{comp.image}}.png" alt="{{comp}}">
+                </li>
+            </ul>
+        </div>
     </div>
+    <hr>
     <div class="fiftyfifty" id="bulles">
         <h2>Mes expériences</h2>
         <div id="figures">
-            <figure>
-                <img src="assets/Prologin.svg.png" alt="Prologin">
-                <div class="content">
-                    <div class="base">
-                        <h3>Prologin</h3>
-                        <p>
-                            L'association Prologin permet de faire découvrir l'informatique aux plus jeunes. J'ai l'occasion d'intervenir lors des Girls Can Code qui sont
-                            des week-ends de découverte pour les filles de la sixièmes à la terminale.
-                        </p>
-                    </div>
-                    <div class="complement">
-                        <h4>Infos complémentaires</h4>
-                        <p>L'association propose également un concours national qui existe déjà depuis 1991.</p>
-                    </div>
-                    <div class="enSavoirPlus">
-                        <a href="https://prologin.org/" target="_blank">En savoir plus </a>
-                        <p>&#10140;</p>
-                    </div>
-                </div>
-            </figure>
+            <ul>
+                <li *ngFor="let projet of projets">
+                    <app-card [projet] = projet></app-card>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

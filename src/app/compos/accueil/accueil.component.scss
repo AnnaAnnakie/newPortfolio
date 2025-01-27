@@ -5,38 +5,102 @@
   width: 95vw;
 }
 
-.content > div {
-  padding: 4vw;
-  min-height: calc(100vh - 8vw);
-  display: flex;
-}
-
-h1 {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  font-size: 4.5em;
-}
-
 #div1,
 #div2 {
+  display: flex;
+  flex-direction: column;
+  padding: 3vw;
+  min-height: calc(100vh - 8vw);
   flex: 50%;
   transition: flex 0.3s ease, transform 0.3s ease, filter 0.3s ease;
+  button{
+    color: var(--Redwood);
+    background-color: white;
+    border-radius: 2vw;
+    font-size: 1.5em;
+    width: 15vw;
+    padding: 1.3vw;
+    transition: background-color 0.3s ease;
+    border: #8c2f39 1px solid;
+  }
+  button:hover {
+    background-color: var(--Redwood);
+    color: white;
+  }
+  button:active {
+    background-color: var(--Chocolate-cosmos  );
+    color: white;
+  }
+  h1 {
+    transition: transform 0.3s ease, opacity 0.3s ease, font-size 0.3s ease-in-out;
+    font-size: 4.3em;
+  }
 }
-/*
+#div1{
+  button{
+    margin: auto auto 1vh 1vw;
+  }
+}
+#div2{
+  button{
+    margin: auto 1vw 1vh auto;
+  }
+}
+
 .content:hover #div1:hover,
 .content:hover #div2:hover {
-  z-index: 2;
-  font-size: 1.1em;
+  h1 {
+    font-size: 4.5em;
+  }
 }
-*/
+
+hr{
+  height: 97.5vh;
+}
+
 @media (orientation: portrait) {
   .content {
     flex-wrap: wrap;
-    width: 87vw;
   }
-  .content div {
-    min-height: calc(50vh - 1vw);
+  #div1,
+  #div2 {
+    min-height: calc(50vh - 5vw);
+    h1 {
+      font-size: 1.8em;
+    }
+    button{
+      border-radius: 5vw;
+      width: 50vw;
+      padding: 2.5vw;
+      margin-right: 15vw;
+      margin-left: auto;
+    }
   }
-  h1 {
-    font-size: 7vw;
+
+  .content:hover #div1:hover,
+  .content:hover #div2:hover {
+    h1 {
+      font-size: 1.9em;
+    }
+  }
+  hr{
+    display: none;
   }
 }
+
+
+/* éléments absolutes
+
+#js{
+  position: absolute;
+  width: 10vw;
+  transform: rotate(50deg);
+  right: 3vw;
+  top: 50vh;
+}
+#cpp{
+  position: absolute;
+  width: 15vw;
+  transform: rotate(330deg);
+  bottom: -10vh;
+}*/

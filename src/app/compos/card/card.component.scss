@@ -1,0 +1,67 @@
+figure{
+  width: 20vw;
+  border-radius: 15px;
+  border: 1px solid rgb(210, 210, 210);
+  margin: 1vh auto;
+  background-color: white;
+  img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 15vh;
+    object-fit: cover;
+  }
+  .content{
+    display: flex;
+    padding: 1vw;
+    flex-direction: column;
+    h3{
+      font-size: 1.4em;
+    }
+    h4{
+      font-size: 1.3em;
+    }
+    h3,h4{
+      margin: 1vh 0;
+    }
+    p{
+      text-align: justify;
+      margin-top: 0;
+    }
+    .enSavoirPlus{
+      display: flex;
+      height: auto;
+      align-items: center;
+      :hover ~ p{
+        margin-left: 2.5vw;
+      }
+      a{
+        text-decoration: none;
+        margin-left: 3vw;
+      }
+      p{
+        margin: auto 0;
+        transition: margin-left 0.8s ease;
+      }
+    }
+  }
+}
+
+@media (orientation: portrait){
+  figure{
+    width: 85%;
+    .content{
+      padding: 1.5vw;
+      .enSavoirPlus{
+        :hover ~ p{
+          margin-left: 10vw;
+        }
+        a{
+          margin-left: 15vw;
+        }
+        p {
+          margin: auto 0;
+        }
+      }
+    }
+  }
+}

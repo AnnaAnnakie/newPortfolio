@@ -3,7 +3,8 @@ export interface ProjectInterface {
     image: string;
     description: string;
     link: string | null;
-    complément: ComplementInterface;
+    intitule: string;
+    complement: ComplementInterface;
 }
 
 export interface ComplementInterface {
