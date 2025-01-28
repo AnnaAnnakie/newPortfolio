@@ -7,6 +7,12 @@
   width: 48vw;
   padding: 2vh 2vw;
 }
+
+#global{
+  p{
+    text-align: justify;
+  }
+}
 li{
   list-style: none;
   margin: 1vh auto;
@@ -16,8 +22,7 @@ ul{
   flex-wrap: wrap;
   padding: 0;
 }
-#prefs, #global{
-
+#prefs, #used{
   img{
     height: 6vw;
   }
@@ -32,7 +37,8 @@ h2{
     width: 87vw;
     flex-direction: column;
     .fiftyfifty{
-      width: 87vw;
+      width: 81vw;
+      padding: 1vh 3vw;
     }
   }
   #figures{
@@ -42,9 +48,9 @@ h2{
   hr{
     display: none;
   }
-  #prefs{
+  #prefs, #used{
     img{
-      width: 25vw;
+      height: 15vw;
     }
   }
 

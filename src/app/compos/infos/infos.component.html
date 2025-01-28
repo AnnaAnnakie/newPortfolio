@@ -1,7 +1,14 @@
 <div class="container">
     <div class="fiftyfifty" id="global">
-        <h2>Mes connaissances</h2>
-        <h3>Les plus utilisés</h3>
+        <h2>Présentation</h2>
+        <p>
+            Le développement est quelque chose que j'ai commencé à apprendre dès le collège.
+            Cependant j'ai principalement appris à l'IUT lors de mon parcours en BUT Informatique.
+            Aujourd'hui en 3ème année, je prends beaucoup de plaisir à réaliser des interfaces web.
+            Vous trouverez ici un résumé de ce qui se rapporte à l'informatique dans ma vie.
+        </p>
+        <h2 *ngIf="getType() == 'pro'">Mes connaissances</h2>
+        <h3 *ngIf="getType() == 'pro'">Les plus utilisées</h3>
         <div id="prefs">
             <ul>
                 <li *ngFor="let comp of favComp">
@@ -9,7 +16,7 @@
                 </li>
             </ul>
         </div>
-        <h3>Déjà utilisé dans des projets</h3>
+        <h3 *ngIf="getType() == 'pro'">Déjà utilisées dans des projets</h3>
         <div id="used">
             <ul>
                 <li *ngFor="let comp of globalComp">
@@ -20,11 +27,11 @@
     </div>
     <hr>
     <div class="fiftyfifty" id="bulles">
-        <h2>Mes expériences</h2>
+        <h2 *ngIf="getType() == 'pro'">Mes expériences</h2>
         <div id="figures">
             <ul>
-                <li *ngFor="let projet of projets">
-                    <app-card [projet] = projet></app-card>
+                <li *ngFor="let content of contents">
+                    <app-card [projet] = content></app-card>
                 </li>
             </ul>
         </div>
