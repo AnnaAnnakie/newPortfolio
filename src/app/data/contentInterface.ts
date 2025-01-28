@@ -1,10 +1,28 @@
+import {ProjectInterface} from "./projetInterface";
+
 export interface contentInterface {
     id: string;
-    content: contentInterface;
+    content: contentsInterface;
 }
 
 export interface contentsInterface {
-    title1: string;
-    title2: string;
-    basePrès
+    titleRightSide: string;
+    cardList: ProjectInterface[];
+
+    firstTitleLeftSection: string;
+    presentation: string;
+    secondTitleLeftSection: string;
+    subTitleLeftSection1: string;
+    firstSubSection: firstSubSectionLeft;
+    subTitleLeftSection2: string;
+    secondSubSection: secondSubSectionLeft;
+}
+
+export interface firstSubSectionLeft {
+    type: string;
+    list: string[];
+}
+export interface secondSubSectionLeft {
+    type: string;
+    list: string[];
 }

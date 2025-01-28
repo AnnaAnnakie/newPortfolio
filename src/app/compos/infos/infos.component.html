@@ -1,36 +1,34 @@
 <div class="container">
     <div class="fiftyfifty" id="global">
-        <h2>Présentation</h2>
+        <h2>{{contents.content.firstTitleLeftSection}}</h2>
         <p>
-            Le développement est quelque chose que j'ai commencé à apprendre dès le collège.
-            Cependant j'ai principalement appris à l'IUT lors de mon parcours en BUT Informatique.
-            Aujourd'hui en 3ème année, je prends beaucoup de plaisir à réaliser des interfaces web.
-            Vous trouverez ici un résumé de ce qui se rapporte à l'informatique dans ma vie.
+            {{contents.content.presentation}}
         </p>
-        <h2 *ngIf="getType() == 'pro'">Mes connaissances</h2>
-        <h3 *ngIf="getType() == 'pro'">Les plus utilisées</h3>
+        <h2>{{contents.content.secondTitleLeftSection}}</h2>
+        <h3>{{contents.content.subTitleLeftSection1}}</h3>
         <div id="prefs">
             <ul>
-                <li *ngFor="let comp of favComp">
-                    <img src="assets/languages/{{comp.image}}.png" alt="{{comp.image}}">
+                <li *ngFor="let comp of contents.content.firstSubSection.list">
+                    <img src="assets/languages/{{comp}}.png" alt="{{comp}}">
+
                 </li>
             </ul>
         </div>
-        <h3 *ngIf="getType() == 'pro'">Déjà utilisées dans des projets</h3>
+        <h3>{{contents.content.subTitleLeftSection2}}</h3>
         <div id="used">
             <ul>
-                <li *ngFor="let comp of globalComp">
-                    <img src="assets/languages/{{comp.image}}.png" alt="{{comp.image}}">
+                <li *ngFor="let comp of contents.content.secondSubSection.list">
+                    <img src="assets/languages/{{comp}}.png" alt="{{comp}}">
                 </li>
             </ul>
         </div>
     </div>
     <hr>
     <div class="fiftyfifty" id="bulles">
-        <h2 *ngIf="getType() == 'pro'">Mes expériences</h2>
+        <h2>{{contents.content.titleRightSide}}</h2>
         <div id="figures">
             <ul>
-                <li *ngFor="let content of contents">
+                <li *ngFor="let content of contents.content.cardList">
                     <app-card [projet] = content></app-card>
                 </li>
             </ul>

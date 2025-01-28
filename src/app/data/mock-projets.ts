@@ -54,3 +54,17 @@ export const PERSO: ProjectInterface[] = [
         }
     }
 ]
+
+export const PLACEHOLDER: ProjectInterface[] = [
+    {
+        name: "",
+        link: null,
+        image: "placeholder",
+        description :"",
+        intitule :"",
+        complement:{
+            type: "text",
+            list: [""]
+        }
+    }
+]

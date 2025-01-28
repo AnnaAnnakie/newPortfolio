@@ -1,14 +1,13 @@
-import { Component } from '@angular/core';
-import {ActivatedRoute, RouterLink} from "@angular/router";
-import {PROJETS, PERSO} from "../../data/mock-projets";
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute  } from "@angular/router";
 import {NgFor, NgIf} from "@angular/common";
 import {CardComponent} from "../card/card.component";
-import {FAVCOMPS, GLOBALCOMPS} from "../../data/mock-comp";
+import { CONTENT} from "../../data/mock-content";
+import {PLACEHOLDER} from "../../data/mock-projets";
 
 @Component({
   selector: 'app-infos',
   imports: [
-    RouterLink,
     NgFor,
     NgIf,
     CardComponent
@@ -16,29 +15,41 @@ import {FAVCOMPS, GLOBALCOMPS} from "../../data/mock-comp";
   templateUrl: './infos.component.html',
   styleUrl: './infos.component.scss'
 })
-export class InfosComponent {
+export class InfosComponent implements OnInit {
+  type: string | null =null;
   constructor(
       private route: ActivatedRoute
   ){}
-  ngOnInit() {
-    this.setupParType();
+
+  ngOnInit(){
+    this.setContent();
   }
-  contents = PROJETS;
-  favComp = FAVCOMPS;
-  globalComp = GLOBALCOMPS;
+
   getType(){
     return (this.route.snapshot.paramMap.get('type'));
   }
-
-  setupParType(){
-    if( this.getType() == "pro"){
-      this.contents = PROJETS;
-      this.favComp = FAVCOMPS;
-      this.globalComp = GLOBALCOMPS;
-    }else{
-      this.contents = PERSO;
-      this.favComp = [];
-      this.globalComp = [];
-    }
+  setContent(){
+    this.contents = CONTENT.find(item => item.id === this.getType()) || this.contents;
   }
+
+  contents = {
+    id: "",
+    content:{
+      titleRightSide: "",
+      cardList: PLACEHOLDER,
+      firstTitleLeftSection: "",
+      presentation: "",
+      secondTitleLeftSection: "",
+      subTitleLeftSection1: "",
+      subTitleLeftSection2: "",
+      firstSubSection:{
+        type: "text",
+        list : [""],
+      },
+      secondSubSection:{
+        type: "",
+        list : [""],
+      }
+    }
+  };
 }
