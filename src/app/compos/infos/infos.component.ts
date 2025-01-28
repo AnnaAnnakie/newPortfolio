@@ -3,7 +3,7 @@ import {RouterLink} from "@angular/router";
 import {PROJETS} from "../../data/mock-projets";
 import {NgFor, NgIf} from "@angular/common";
 import {CardComponent} from "../card/card.component";
-import {FAVCOMPS} from "../../data/mock-pref-comp";
+import {FAVCOMPS, GLOBALCOMPS} from "../../data/mock-comp";
 
 @Component({
   selector: 'app-infos',
@@ -19,5 +19,5 @@ import {FAVCOMPS} from "../../data/mock-pref-comp";
 export class InfosComponent {
   projets = PROJETS;
   favComp = FAVCOMPS;
-
+  globalComp = GLOBALCOMPS;
 }

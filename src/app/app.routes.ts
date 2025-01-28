@@ -5,5 +5,5 @@ import {InfosComponent} from "./compos/infos/infos.component";
 export const routes: Routes = [
     { path: '', redirectTo: '/accueil', pathMatch: 'full' },
     { path: 'accueil', component: AccueilComponent },
-    { path: 'infos', component: InfosComponent },
+    { path: 'infos/:type', component: InfosComponent },
 ];

@@ -1,10 +1,19 @@
 <div class="container">
     <div class="fiftyfifty" id="global">
-        <h2>Mes compétences</h2>
+        <h2>Mes connaissances</h2>
+        <h3>Les plus utilisés</h3>
         <div id="prefs">
             <ul>
                 <li *ngFor="let comp of favComp">
-                    <img src="assets/languages/{{comp.image}}.png" alt="{{comp}}">
+                    <img src="assets/languages/{{comp.image}}.png" alt="{{comp.image}}">
+                </li>
+            </ul>
+        </div>
+        <h3>Déjà utilisé dans des projets</h3>
+        <div id="used">
+            <ul>
+                <li *ngFor="let comp of globalComp">
+                    <img src="assets/languages/{{comp.image}}.png" alt="{{comp.image}}">
                 </li>
             </ul>
         </div>
