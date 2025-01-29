@@ -14,7 +14,7 @@ export const CONTENT: contentInterface[] = [
             subTitleLeftSection2: "Déjà utilisées dans des projets",
             firstSubSection:{
                 type: "images",
-                list : ["Angular","JavaScript", "html", "css"],
+                list : ["Angular","JavaScript", "html", "css", "scss"],
             },
             secondSubSection:{
                 type: "images",

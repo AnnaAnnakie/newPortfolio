@@ -4,13 +4,15 @@ import {NgFor, NgIf} from "@angular/common";
 import {CardComponent} from "../card/card.component";
 import { CONTENT} from "../../data/mock-content";
 import {PLACEHOLDER} from "../../data/mock-projets";
+import {CarouselComponent} from "../carousel/carousel.component";
 
 @Component({
   selector: 'app-infos',
   imports: [
     NgFor,
     NgIf,
-    CardComponent
+    CardComponent,
+    CarouselComponent
   ],
   templateUrl: './infos.component.html',
   styleUrl: './infos.component.scss'

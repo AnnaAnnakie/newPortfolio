@@ -10,7 +10,6 @@
             <ul>
                 <li *ngFor="let comp of contents.content.firstSubSection.list">
                     <img src="assets/languages/{{comp}}.png" alt="{{comp}}">
-
                 </li>
             </ul>
         </div>
@@ -27,9 +26,10 @@
     <div class="fiftyfifty" id="bulles">
         <h2>{{contents.content.titleRightSide}}</h2>
         <div id="figures">
+            <!--<app-carousel [cardList]="contents.content.cardList"></app-carousel>-->
             <ul>
-                <li *ngFor="let content of contents.content.cardList">
-                    <app-card [projet] = content></app-card>
+                <li *ngFor="let card of contents.content.cardList">
+                    <app-card [projet] = card></app-card>
                 </li>
             </ul>
         </div>

@@ -1,16 +1,18 @@
 import { Component } from '@angular/core';
 import { CONTENT} from "../../data/mock-content";
 import {NgIf} from "@angular/common";
+import {CarouselComponent} from "../carousel/carousel.component";
 
 @Component({
   selector: 'app-tests',
   imports: [
-      NgIf
+    NgIf,
+    CarouselComponent
   ],
   templateUrl: './tests.component.html',
   styleUrl: './tests.component.scss'
 })
 export class TestsComponent {
-  test = CONTENT;
-  content = this.test.find(item => item.id === "pro") || { id: '', content: { titleRightSide: '' } };
+  contents = CONTENT[0];
+
 }

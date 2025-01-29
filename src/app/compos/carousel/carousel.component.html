@@ -1,0 +1,13 @@
+<div class="carousel">
+    <ng-container *ngFor="let card of cardList; let i = index">
+        <app-card *ngIf="i === currentSlide" [projet] = card [class.slide]="true" ></app-card>
+    </ng-container>
+
+    <!-- controls -->
+    <button class="control prev" (click)="onPreviousClick()">
+        <span class="arrow left"></span>
+    </button>
+    <button class="control next" (click)="onNextClick()">
+        <span class="arrow right"></span>
+    </button>
+</div>

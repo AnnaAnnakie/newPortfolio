@@ -25,6 +25,18 @@ export const PROJETS: ProjectInterface[] = [
             list: ["Ce stage s'est déroulé sur le site de Crolles mais l'équipe était également présente à Édimbourg, ce qui nécessitait de communiquer " +
             "régulèrement en anglais."]
         }
+    },
+    {
+        name: "Soutien +",
+        link: null,
+        image: "soutien",
+        description :"Dans le cadre de ma 3e année de BUT Informatique, nous devons réalisé en équipe de 7 une " +
+            "application collaborative facilitant la gestion des personnes agées par des aidants, personnel médicaux etc... ",
+        intitule: "Connaissances mises à profit",
+        complement:{
+            type: "img",
+            list: ["Angular", "springBoot"]
+        }
     }
 ]
 
