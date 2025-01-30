@@ -114,3 +114,62 @@ hr{
   transform: rotate(330deg);
   bottom: -10vh;
 }*/
+
+/* Bandeau d'annonce */
+
+.bandeau{
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  background-color: rgba(70,18,32, 0.8);
+  color: white;
+  width: 100vw;
+  p{
+    animation: slide 30s linear infinite;
+  }
+}
+@media (orientation: portrait) {
+  .bandeau{
+    position: sticky;
+    z-index: 5;
+    display: flex;
+    background-color: rgba(70,18,32, 0.8);
+    color: white;
+    width: 100vw;
+    p{
+      animation: slide_mobile 10s linear infinite;
+    }
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateX(95%);
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-40vw);
+    opacity: 1;
+  }
+}
+@keyframes slide_mobile {
+  0% {
+    transform: translateX(95%);
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100vw);
+    opacity: 1;
+  }
+}
