@@ -7,10 +7,14 @@
   width: 48vw;
   padding: 2vh 2vw;
 }
-
 li{
-  margin: 1vh auto;
+  &#content{
+    width: 44vw;
+  }
   list-style: none;
+  &.list{
+    margin: 1vh auto;
+  }
 }
 ul{
   display: flex;
@@ -40,6 +44,11 @@ h2{
     .fiftyfifty{
       width: 81vw;
       padding: 1vh 3vw;
+    }
+  }
+  li{
+    &#content{
+      width: 75vw;
     }
   }
   #figures{

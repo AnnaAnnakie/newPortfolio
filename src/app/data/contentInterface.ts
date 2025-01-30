@@ -11,18 +11,13 @@ export interface contentsInterface {
 
     firstTitleLeftSection: string;
     presentation: string;
-    secondTitleLeftSection: string;
-    subTitleLeftSection1: string;
-    firstSubSection: firstSubSectionLeft;
-    subTitleLeftSection2: string;
-    secondSubSection: secondSubSectionLeft;
+
+    sectionsLeft: SubSectionLeft[] | null;
 }
 
-export interface firstSubSectionLeft {
-    type: string;
-    list: string[];
-}
-export interface secondSubSectionLeft {
-    type: string;
-    list: string[];
+export interface SubSectionLeft {
+    bigTitle: string | null;
+    subTitleLeftSection: string | null;
+    type: string | null;
+    list: string[] | null;
 }

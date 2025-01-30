@@ -4,23 +4,20 @@
         <p>
             {{contents.content.presentation}}
         </p>
-        <h2>{{contents.content.secondTitleLeftSection}}</h2>
-        <h3>{{contents.content.subTitleLeftSection1}}</h3>
-        <div id="prefs">
-            <ul>
-                <li *ngFor="let comp of contents.content.firstSubSection.list">
-                    <img src="assets/languages/{{comp}}.png" alt="{{comp}}">
-                </li>
-            </ul>
-        </div>
-        <h3>{{contents.content.subTitleLeftSection2}}</h3>
-        <div id="used">
-            <ul>
-                <li *ngFor="let comp of contents.content.secondSubSection.list">
-                    <img src="assets/languages/{{comp}}.png" alt="{{comp}}">
-                </li>
-            </ul>
-        </div>
+        <ul>
+            <li *ngFor="let section of contents.content.sectionsLeft" id="content">
+                <h2 *ngIf="section.bigTitle != null">{{section.bigTitle}}</h2>
+                <h3 *ngIf="section.subTitleLeftSection != null">{{section.subTitleLeftSection}}</h3>
+                <div id="prefs">
+                    <ul>
+                        <li *ngFor="let comp of section.list" class="list">
+                            <img src="assets/languages/{{comp}}.png" alt="{{comp}}">
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+
     </div>
     <hr>
     <div class="fiftyfifty" id="bulles">
@@ -28,7 +25,7 @@
         <div id="figures">
             <!--<app-carousel [cardList]="contents.content.cardList"></app-carousel>-->
             <ul>
-                <li *ngFor="let card of contents.content.cardList">
+                <li *ngFor="let card of contents.content.cardList" class="list">
                     <app-card [projet] = card></app-card>
                 </li>
             </ul>
