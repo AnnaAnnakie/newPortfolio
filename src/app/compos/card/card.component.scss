@@ -36,35 +36,38 @@ figure{
       text-align: justify;
       margin-top: 0;
     }
-    .enSavoirPlus{
-      display: flex;
-      height: auto;
-      align-items: center;
-      :hover ~ p{
-        margin-left: 2.5vw;
-      }
-      a{
-        text-decoration: none;
-        margin-left: 3vw;
-        color: black;
-      }
-      a::after {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 7vw;
-        height: 1px;
-        background-color: #000;
-        transform: scaleX(0);
-        transition: transform 0.8s ease;
-      }
-      a:hover::after {
-        transform: scaleX(1);
-      }
-      p{
-        margin: auto 0;
-        transition: margin-left 0.8s ease;
-      }
+
+  }
+  .enSavoirPlus{
+    border-top: dashed 2px rgb(210, 210, 210);
+    display: flex;
+    height: auto;
+    align-items: center;
+    padding: 1vw;
+    :hover ~ p{
+      margin-left: 2.5vw;
+    }
+    a{
+      text-decoration: none;
+      margin-left: 3vw;
+      color: black;
+    }
+    a::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 7vw;
+      height: 1px;
+      background-color: #000;
+      transform: scaleX(0);
+      transition: transform 0.8s ease;
+    }
+    a:hover::after {
+      transform: scaleX(1);
+    }
+    p{
+      margin: auto 0;
+      transition: margin-left 0.8s ease;
     }
   }
 }
@@ -74,19 +77,20 @@ figure{
     width: 80vw;
     .content{
       padding: 2vw;
-      .enSavoirPlus{
-        :hover ~ p{
-          margin-left: 10vw;
+    }
+    .enSavoirPlus{
+      padding: 2vh;
+      :hover ~ p{
+        margin-left: 10vw;
+      }
+      a{
+        margin-left: 15vw;
+        &::after{
+          width: 33vw;
         }
-        a{
-          margin-left: 15vw;
-          &::after{
-            width: 33vw;
-          }
-        }
-        p {
-          margin: auto 0;
-        }
+      }
+      p {
+        margin: auto 0;
       }
     }
   }
