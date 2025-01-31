@@ -73,13 +73,16 @@ figure{
   figure{
     width: 80vw;
     .content{
-      padding: 1.5vw;
+      padding: 2vw;
       .enSavoirPlus{
         :hover ~ p{
           margin-left: 10vw;
         }
         a{
           margin-left: 15vw;
+          &::after{
+            width: 33vw;
+          }
         }
         p {
           margin: auto 0;
