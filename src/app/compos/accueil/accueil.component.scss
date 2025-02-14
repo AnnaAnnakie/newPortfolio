@@ -2,7 +2,7 @@
   display: flex;
   padding: 0;
   left: 0;
-  width: 95vw;
+  width: 100vw;
 }
 
 #div1,
@@ -14,8 +14,7 @@
   flex: 50%;
   transition: flex 0.3s ease, transform 0.3s ease, filter 0.3s ease;
   button{
-    color: var(--Redwood);
-    background-color: white;
+    background: linear-gradient(150deg, var(--Crayola), 40% , var(--Salmon-pink));
     border-radius: 2vw;
     font-size: 1.5em;
     width: 15vw;
