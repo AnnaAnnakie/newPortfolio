@@ -1,6 +1,3 @@
-<div>
-    <app-carousel [cardList]="contents.content.cardList"></app-carousel>
-</div>
-<div>
-    <p>T'as rien à faire là, y'a rien à voir!</p>
+<div class="sparkles">
+    <div *ngFor="let sparkle of sparkles" class="sparkle" [ngStyle]="{ top: sparkle.top + '%', left: sparkle.left + '%' }"></div>
 </div>

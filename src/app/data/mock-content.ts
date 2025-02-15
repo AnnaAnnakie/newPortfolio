@@ -15,12 +15,14 @@ export const CONTENT: contentInterface[] = [
                     bigTitle: "Mes connaissances",
                     subTitleLeftSection: "Les plus utilisées",
                     type: "images",
+                    path : "languages",
                     list: ["Angular","JavaScript", "html", "css", "scss"],
                 },
                 {
                     bigTitle: null,
                     subTitleLeftSection: "Déjà utilisées dans des projets",
                     type: "images",
+                    path: "languages",
                     list : ["Docker", "CPP", "python", "java", "postgresql", "mongodb", "nodejs", "PHP", "git"],
                 }
             ]

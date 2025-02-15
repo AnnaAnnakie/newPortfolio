@@ -1,9 +1,9 @@
 figure{
   margin: 0;
-  width: 20vw;
+  width: 25em;
   border-radius: 15px;
-  border: 1px solid rgb(210, 210, 210);
-  background-color: white;
+  border: 1px solid var(--border-grey);
+  background-color: var(--light-grey);
   .heroImg{
     width: 100%;
     border-radius: 15px 15px 0 0;
@@ -39,7 +39,7 @@ figure{
 
   }
   .enSavoirPlus{
-    border-top: dashed 2px rgb(210, 210, 210);
+    border-top: dashed 2px var(--border-grey);
     display: flex;
     height: auto;
     align-items: center;
@@ -50,7 +50,7 @@ figure{
     a{
       text-decoration: none;
       margin-left: 3vw;
-      color: black;
+      color: white;
     }
     a::after {
       content: "";
@@ -58,7 +58,7 @@ figure{
       display: block;
       width: 7vw;
       height: 1px;
-      background-color: #000;
+      background-color: #fff;
       transform: scaleX(0);
       transition: transform 0.8s ease;
     }

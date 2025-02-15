@@ -1,4 +1,4 @@
-<aside id="links">
+<aside id="links" [class.open]="menuOpen" (click)="toggleMenu()">
     <a routerLink="/accueil"><img src="assets/home.svg" alt="home" id="home" /></a>
     <hr />
     <ul>
@@ -6,5 +6,4 @@
         <li><a href="https://www.instagram.com/annakie_draw" target="_blank"><img src="assets/Insta.png" alt="" /></a></li>
     </ul>
     <hr />
-    <div id="triangle"></div>
 </aside>

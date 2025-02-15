@@ -1,10 +1,17 @@
 .container {
   display: flex;
-  width: 95vw;
   min-height: 100vh;
 }
+
+hr{
+  color: var(--border-grey);
+  background-color: var(--border-grey);
+  border-color: var(--border-grey);
+  width: 1px;
+}
+
 .fiftyfifty{
-  width: 48vw;
+  width: calc(50vw - 8vh);
   padding: 2vh 2vw;
 }
 li{
@@ -26,15 +33,15 @@ li{
       justify-content: center;
       border-radius: 5px;
       transition: 0.3s ease-in;
-      background-color: var(--Redwood);
+      background-color: var(--Amaranth-purple);
       color: #fff;
       min-width: 5vw;
       padding: 1vh 1vw;
       &:before{
+        background-color: var(--Amaranth-purple);
         z-index: 2;
         content: '';
         position: absolute;
-        background-color: var(--Redwood);
         clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 50%);
         width: 2.5vh;
         height: 2.5vh;
@@ -64,16 +71,25 @@ ul{
 }
 
 h2{
-  font-size: 2em;
+  font-size: 2.3em;
+  color: var(--Crayola);
+/*  background: -webkit-linear-gradient(180deg,var(--Lavender-blush) 40%, var(--Salmon-pink) 85%, var(--Claret) 115%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+}
+p{
+  font-size: 1.1em;
 }
 
 @media (orientation: portrait) {
   .container {
-    width: 87vw;
+    width: 100vw;
     flex-direction: column;
     .fiftyfifty{
-      width: 81vw;
       padding: 1vh 3vw;
+      &, h2{
+        width: 94vw;
+      }
     }
   }
   li{

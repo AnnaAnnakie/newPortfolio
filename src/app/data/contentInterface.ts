@@ -19,5 +19,6 @@ export interface SubSectionLeft {
     bigTitle: string | null;
     subTitleLeftSection: string | null;
     type: string | null;
+    path: string | null;
     list: string[] | null;
 }

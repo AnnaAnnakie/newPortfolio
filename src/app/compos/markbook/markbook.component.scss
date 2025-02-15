@@ -1,30 +1,29 @@
 #links {
   z-index: 10;
   color: white;
-  background-color: var(--Chocolate-cosmos);
-  height: 100vh;
+  background: linear-gradient(180deg,var(--Claret),90%,var(--Crayola));
+  height: 95vh;
   width: 5vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: fixed;
-  top: 0;
-  right: 0;
+  top: -85vh;
+  right: 5vw;
+  transition: ease 0.8s ;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 97%, 50% 100%, 50% 97%, 0 100%);
+  &:hover {
+    top: -80vh;
+  }
+  &.open{
+    top: 0;
+  }
 }
 
 hr {
   height: 15vh;
   width: 0.01vw;
   background-color: white;
-}
-
-#triangle {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  border-left: 2.5vw solid transparent;
-  border-right: 2.5vw solid transparent;
-  border-bottom: 2vw solid white;
 }
 
 #home {
@@ -52,11 +51,7 @@ img {
 @media (orientation: portrait) {
   #links {
     width: 13vw;
-  }
-  #triangle {
-    border-left: 6.5vw solid transparent;
-    border-right: 6.5vw solid transparent;
-    border-bottom: 5vw solid white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 97%, 50% 100%, 50% 97%, 0 100%);
   }
   img{
     width: 7vw;

@@ -9,12 +9,13 @@
                 <h2 *ngIf="section.bigTitle != null">{{section.bigTitle}}</h2>
                 <h3 *ngIf="section.subTitleLeftSection != null">{{section.subTitleLeftSection}}</h3>
                 <div id="prefs">
-                    <ul>
-                        <li *ngFor="let comp of section.list" class="list">
-                            <img src="assets/languages/{{comp}}.png" alt="{{comp}}">
+                    <ul *ngIf="section.type === 'images'">
+                        <li *ngFor="let comp of section.list"  class="list">
+                            <img src="assets/{{section.path}}/{{comp}}.png" alt="{{comp}}">
                             <span>{{comp}}</span>
                         </li>
                     </ul>
+
                 </div>
             </li>
         </ul>

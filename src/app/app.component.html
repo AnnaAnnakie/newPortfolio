@@ -1,4 +1,17 @@
-<body>
+<body class="sparkles">
     <router-outlet></router-outlet>
     <app-markbook></app-markbook>
+
+    <div *ngFor="let sparkle of sparkles" class="sparkle"
+         [ngStyle]="{
+       top: sparkle.top + '%',
+       left: sparkle.left + '%',
+       animationDuration: sparkle.animationDuration,
+       animationDelay: sparkle.animationDelay
+     }">
+    </div>
+
+    <footer>
+        <p>© 2025 - Anaïs M.</p>
+    </footer>
 </body>

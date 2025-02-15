@@ -10,5 +10,9 @@ import {RouterLink} from "@angular/router";
   styleUrl: './markbook.component.scss'
 })
 export class MarkbookComponent {
+  menuOpen = false;
 
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
 }
