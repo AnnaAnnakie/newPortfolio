@@ -1,59 +1,52 @@
-# PORTFOLIO
+# ⭐ MON PORTFOLIO 
+Bienvenue sur le dépôt de mon portfolio !
+Ce portfolio me sert de complément à mon CV et 
+me présente ainsi que mes projets.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.3.
+## 🛠️ Installation et Configuration
+Pour récupérer ce projet en local, suivre les 
+instructions ci-dessous:
 
-## Development server
-
-To start a local development server, run:
-
-```bash
-ng serve
+1. Clone le dépôt:
+``` bash
+git clone https://github.com/AnnaAnnakie/newPortfolio.git
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+2. Se placer dans le dossier:
 ```bash
-ng generate component component-name
+cd newPortfolio/
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
+3. Installer les dépendances:
 ```bash
-ng generate --help
+npm install
 ```
 
-## Building
-
-To build the project run:
-
+4. Lancer le projet:
 ```bash
-ng build
+npm run start
+```
+5. Ouvrir le navigateur à http://localhost:4200
+
+## 📂 Structure du projet
+```
+portfolio/
+├── src/
+│   ├── app/
+│   │   ├── compos/
+│   │   └── data/
+│   └── assets/
+├── .gitignore
+├── package.json
+└── README.md
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 💻 Preview
+[![img.png](public/img.png)](https://annaannakie.github.io/newPortfolio/)
 
-## Running unit tests
+## 👩🏻‍💻 Autrice
+**Anaïs Marchetti** - [GitHub](https://github.com/AnnaAnnakie)
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+Merci d'avoir visité mon dépôt. Si vous avez des questions, 
+n'hésitez pas à me contacter !
