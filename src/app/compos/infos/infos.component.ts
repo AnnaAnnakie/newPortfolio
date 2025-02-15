@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute  } from "@angular/router";
+import {ActivatedRoute, RouterLink} from "@angular/router";
 import {NgFor, NgIf} from "@angular/common";
 import {CardComponent} from "../card/card.component";
 import { CONTENT} from "../../data/mock-content";
@@ -13,6 +13,7 @@ import {contentInterface} from "../../data/contentInterface";
     NgFor,
     NgIf,
     CardComponent,
+    RouterLink,
   ],
   templateUrl: './infos.component.html',
   styleUrl: './infos.component.scss'
