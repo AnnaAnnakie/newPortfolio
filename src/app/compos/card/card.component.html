@@ -1,5 +1,6 @@
 <figure >
-    <img src="assets/cardPro/{{projet.image}}.png" alt="{{projet.image}}" class="heroImg">
+    <img src="assets/cardPro/{{projet.image.image}}.png" alt="{{projet.image.image}}" class="heroImg">
+    <a *ngIf="projet.image.source != null" href="{{projet.image.source}}" class="source">{{projet.image.afficher}}</a>
     <div class="content">
         <div class="base">
             <h3>{{projet.name}}</h3>

@@ -4,7 +4,11 @@ export const PROJETS: ProjectInterface[] = [
     {
         name: "Prologin",
         link: "https://prologin.org/",
-        image: 'Prologin',
+        image: {
+            image:'Prologin',
+            source: "https://www.facebook.com/stagegirlscancode/",
+            afficher: "GirlsCanCode",
+        },
         description:"L'association Prologin permet de faire découvrir l'informatique aux plus jeunes. J'ai l'occasion d'intervenir lors des Girls Can Code qui " +
             " sont des week-ends de découverte pour les filles de la sixièmes à la terminale.",
         intitule: "Infos complémentaires",
@@ -16,7 +20,11 @@ export const PROJETS: ProjectInterface[] = [
     {
         name: "Stage STMicroelectronics",
         link: null,
-        image: "stmicroelectronics",
+        image: {
+            image:"stmicroelectronics",
+            source: null,
+            afficher: null,
+        },
         description :"L'objectif de ce stage était de réaliser un site SharePoint pour une équipe. J'ai également pu manipuler " +
             "d'autres outils de la suite Microsoft comme Power BI ou Power Automate.",
         intitule: "Infos complémentaires",
@@ -29,7 +37,11 @@ export const PROJETS: ProjectInterface[] = [
     {
         name: "Soutien +",
         link: null,
-        image: "soutien",
+        image: {
+            image:"soutien",
+            source: null,
+            afficher: null,
+        },
         description :"Dans le cadre de ma 3e année de BUT Informatique, nous devons réalisé en équipe de 7 une " +
             "application collaborative facilitant la gestion des personnes agées par des aidants, personnel médicaux etc... ",
         intitule: "Connaissances mises à profit",
@@ -44,8 +56,12 @@ export const PERSO: ProjectInterface[] = [
     {
         name: "Animation 2D",
         link: null,
-        image: "Live2D",
-        description :"Habitué au dessin et à la création d'emoticons statiques pour Twitch/Discord, j'ai commencé à m'interesser à l'animation 2D." +
+        image:{
+            image:"Live2D",
+            source: null,
+            afficher: null,
+        },
+        description :"Habitué au dessin et à la création d'émoticônes statiques pour Twitch/Discord, j'ai commencé à m'interesser à l'animation 2D." +
             " L'animation image par image étant très longue, je tente de m'habituer à utiliser le logiciel Live2D.",
         intitule :"Bon à savoir",
         complement:{
@@ -56,7 +72,11 @@ export const PERSO: ProjectInterface[] = [
     {
         name:"Twitch",
         link: "https://www.twitch.tv/anna_annakie",
-        image: "Twitch",
+        image:{
+            image:"Twitch",
+            source: null,
+            afficher: null,
+        },
         description: "Aimant créer et partager avec les autres, streamer sur Twitch reste quelque chose qui m'attire beaucoup. En plus des cours, " +
             "je travaille pour refaire mes scènes et finaliser mon modèle vtuber.",
         intitule:"Bon à savoir",
@@ -71,7 +91,11 @@ export const PLACEHOLDER: ProjectInterface[] = [
     {
         name: "",
         link: null,
-        image: "placeholder",
+        image: {
+            image: "placeholder",
+            source: null,
+            afficher: null,
+        },
         description :"",
         intitule :"",
         complement:{
