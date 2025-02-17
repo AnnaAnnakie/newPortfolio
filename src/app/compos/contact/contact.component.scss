@@ -1,0 +1,93 @@
+#home {
+  position: absolute;
+  top: 2vh;
+  width: 3vw;
+  right: 48.1vw;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+}
+
+.explications{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  margin: 10vh 0 0 10vw;
+  & p{
+    width: 35vw;
+    font-size: 1.2em;
+  }
+  h2{
+    font-size: 4em;
+    color: var(--Rose-red);
+    margin: 15vh 0 0 0;
+  }
+}
+
+form{
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  padding: 30vh 10vw 10vh 10vw;
+  gap: 20px;
+}
+button{
+  background-color: var(--Rose-red);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  height: 3.5em;
+}
+
+.field{
+  display: flex;
+  border-radius: 5px;
+  cursor: text;
+  flex-direction: column;
+  input, textarea {
+    background: var(--light-grey);
+    width: 100%;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 5px;
+    min-height: 8vh;
+    &::placeholder {
+      font-family: "Courier New", Courier, monospace;
+      padding: 5px;
+    }
+  }
+}
+
+.reponse{
+  display: flex;
+  flex-direction: row;
+}
+
+@media (orientation: portrait) {
+  #home{
+    width: 10vw;
+    right: 45vw;
+  }
+  .content{
+    flex-direction: column;
+  }
+  .explications{
+    width: 94vw;
+    margin: 0;
+    padding: 1vw 3vw 0 3vw;
+    & p{
+      width: 100%;
+    }
+    h2{
+      margin: 8vh 0 0 0;
+    }
+  }
+  form{
+    width: 94vw;
+    padding: 5vw 3vw 0 3vw;
+  }
+}

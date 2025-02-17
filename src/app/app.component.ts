@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {RouterLink, RouterOutlet} from '@angular/router';
 import {MarkbookComponent} from "./compos/markbook/markbook.component";
 import {AccueilComponent} from "./compos/accueil/accueil.component";
 import {NgForOf, NgStyle} from "@angular/common";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MarkbookComponent, NgForOf, NgStyle],
+  imports: [RouterOutlet, MarkbookComponent, NgForOf, NgStyle, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

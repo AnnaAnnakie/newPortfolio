@@ -4,7 +4,6 @@ import {RouterLink} from "@angular/router";
 @Component({
   selector: 'app-markbook',
     imports: [
-        RouterLink
     ],
   templateUrl: './markbook.component.html',
   styleUrl: './markbook.component.scss'

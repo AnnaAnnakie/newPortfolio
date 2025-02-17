@@ -6,8 +6,6 @@ import {CarouselComponent} from "../carousel/carousel.component";
 @Component({
   selector: 'app-tests',
   imports: [
-    NgStyle,
-    NgFor
   ],
   templateUrl: './tests.component.html',
   styleUrl: './tests.component.scss'

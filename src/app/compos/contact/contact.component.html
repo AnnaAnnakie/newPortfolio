@@ -1,0 +1,26 @@
+<a routerLink="/accueil"><img src="assets/home.svg" alt="home" id="home" /></a>
+<div class="content">
+    <div class="explications">
+        <h2 class="specialTitle">Me contacter</h2>
+        <p>
+            Si vous avez envie de me contacter pour un emploi, un stage, autre. J'apprécie
+            les retours (positif ou négatif) sur ce portfolio.
+        </p>
+    </div>
+    <form action="https://formspree.io/f/xdkapzkq" method="POST">
+        <label class="field">
+            Mail:
+            <input type="email" name="email" placeholder="Votre email">
+        </label>
+        <label class="field">
+            Message:
+            <textarea name="message" placeholder="Votre message"></textarea>
+        </label>
+        <div id="reponse">
+            <input type="checkbox" name="reponse">
+            <label for="reponse"> Je souhaiterais une réponse</label>
+        </div>
+        <!-- your other form fields go here -->
+        <button type="submit">ENVOYER</button>
+    </form>
+</div>
