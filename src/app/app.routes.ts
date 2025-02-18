@@ -10,4 +10,5 @@ export const routes: Routes = [
     { path: 'infos/:type', component: InfosComponent },
     { path: 'tests', component: TestsComponent },
     { path: 'contact', component: ContactComponent },
+    { path: '**', redirectTo: 'accueil' },
 ];
