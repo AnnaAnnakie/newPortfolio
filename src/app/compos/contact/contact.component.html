@@ -9,18 +9,19 @@
     </div>
     <form action="https://formspree.io/f/xdkapzkq" method="POST">
         <label class="field">
-            Mail:
-            <input type="email" name="email" placeholder="Votre email">
+            Mail *
+            <input [(ngModel)]="mail" type="email" name="email" placeholder="example@email.com">
         </label>
         <label class="field">
-            Message:
-            <textarea name="message" placeholder="Votre message"></textarea>
+            Message *
+            <textarea [(ngModel)]="message" name="message" placeholder="..."></textarea>
         </label>
         <div id="reponse">
             <input type="checkbox" name="reponse">
-            <label for="reponse"> Je souhaiterais une réponse</label>
+            <label for="reponse"> Je souhaiterais être recontacté</label>
         </div>
+
         <!-- your other form fields go here -->
-        <button type="submit">ENVOYER</button>
+        <button type="submit" [disabled]="isValid()">ENVOYER</button>
     </form>
 </div>

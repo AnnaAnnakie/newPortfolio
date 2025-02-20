@@ -14,7 +14,7 @@
   width: 50vw;
   display: flex;
   flex-direction: column;
-  margin: 10vh 0 0 10vw;
+  margin: 8vh 0 0 10vw;
   & p{
     width: 35vw;
     font-size: 1.2em;
@@ -30,8 +30,11 @@ form{
   width: 30vw;
   display: flex;
   flex-direction: column;
-  padding: 30vh 10vw 10vh 10vw;
+  padding: 28vh 10vw 8vh 10vw;
   gap: 20px;
+  & p{
+    margin: 0;
+  }
 }
 button{
   background-color: var(--Rose-red);
@@ -40,6 +43,9 @@ button{
   border-radius: 5px;
   font-size: 1.2em;
   height: 3.5em;
+  &:disabled{
+    background-color: var(--border-grey);
+  }
 }
 
 .field{
@@ -55,10 +61,8 @@ button{
     font-size: 1.1em;
     border-radius: 5px;
     min-height: 8vh;
-    &::placeholder {
-      font-family: "Courier New", Courier, monospace;
-      padding: 5px;
-    }
+    padding-left: 5px;
+    font-family: "Courier New", Courier, monospace;
   }
 }
 
