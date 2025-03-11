@@ -1,4 +1,10 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
 figure{
+  flex-grow: 1;
   margin: 0;
   width: 25em;
   border-radius: 15px;
