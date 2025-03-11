@@ -16,14 +16,14 @@ export const CONTENT: contentInterface[] = [
                     subTitleLeftSection: "Les plus utilisées",
                     type: "images",
                     path : "languages",
-                    list: ["Angular","JavaScript", "html", "css", "scss"],
+                    list: ["Angular","JavaScript", "HTML", "CSS", "SCSS"],
                 },
                 {
                     bigTitle: null,
                     subTitleLeftSection: "Déjà utilisées dans des projets",
                     type: "images",
                     path: "languages",
-                    list : ["Docker", "CPP", "python", "java", "postgresql", "mongodb", "nodejs", "PHP", "git"],
+                    list : ["Docker", "Cpp", "Python", "Java", "PostgreSQL", "MongoDB", "NodeJS", "PHP", "Git"],
                 }
             ]
         }

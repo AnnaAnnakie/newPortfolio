@@ -15,7 +15,8 @@ export const PROJETS: ProjectInterface[] = [
         complement: {
             type: "text",
             list: ["L'association propose également un concours national qui existe déjà depuis 1991."]
-        }
+        },
+        status : null,
     },
     {
         name: "Stage STMicroelectronics",
@@ -32,7 +33,8 @@ export const PROJETS: ProjectInterface[] = [
             type: "text",
             list: ["Ce stage s'est déroulé sur le site de Crolles mais l'équipe était également présente à Édimbourg, ce qui nécessitait de communiquer " +
             "régulèrement en anglais."]
-        }
+        },
+        status : null,
     },
     {
         name: "Soutien +",
@@ -47,8 +49,9 @@ export const PROJETS: ProjectInterface[] = [
         intitule: "Connaissances mises à profit",
         complement:{
             type: "img",
-            list: ["Angular", "springBoot"]
-        }
+            list: ["Angular", "SpringBoot"]
+        },
+        status : "en cours",
     }
 ]
 
@@ -67,7 +70,8 @@ export const PERSO: ProjectInterface[] = [
         complement:{
             type: "text",
             list: ["Les modèles de vtuber étant cher, j'ai également commencé à me pencher sur live2D pour me réaliser mon propre modèle."]
-        }
+        },
+        status : null,
     },
     {
         name:"Twitch",
@@ -82,8 +86,9 @@ export const PERSO: ProjectInterface[] = [
         intitule:"Bon à savoir",
         complement:{
             type:"text",
-            list:["Je suis habitué à Twitch et les outils qui entourent à force d'aider des amis qui stream. De plus j'ai déjà streamé en 2023."],
-        }
+            list:["Je suis habitué à Twitch et les outils qui l'entourent à force d'aider des amis qui stream. De plus j'ai déjà streamé en 2023."],
+        },
+        status : null,
     }
 ]
 
@@ -101,6 +106,7 @@ export const PLACEHOLDER: ProjectInterface[] = [
         complement:{
             type: "text",
             list: [""]
-        }
+        },
+        status : null,
     }
 ]

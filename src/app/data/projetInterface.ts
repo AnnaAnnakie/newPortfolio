@@ -5,6 +5,7 @@ export interface ProjectInterface {
     link: string | null;
     intitule: string;
     complement: ComplementInterface;
+    status : string | null;
 }
 
 export interface ComplementInterface {
