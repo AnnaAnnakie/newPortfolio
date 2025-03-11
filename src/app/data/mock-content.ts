@@ -40,7 +40,7 @@ export const CONTENT: contentInterface[] = [
                 " Ici vous pouvez découvrir ce qui me tient à coeur et ce que je fais de" +
                 " mon temps personnel, qui est rarement consacré à l'informatique. ",
             sectionsLeft:[
-                {
+            /*    {
                     bigTitle: "Dessin",
                     subTitleLeftSection: null,
                     type: "text",
@@ -49,7 +49,7 @@ export const CONTENT: contentInterface[] = [
                         "Je dessine depuis que je suis petite, mais c'est vraiment au collège que j'ai commencé à vraiment m'y intéresser."+
                             ""
                     ]
-                },
+                },*/
             ],
         }
     }
