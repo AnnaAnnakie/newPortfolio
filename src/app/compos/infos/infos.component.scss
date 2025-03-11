@@ -2,9 +2,12 @@
   position: absolute;
   top: 2vh;
   width: 3vw;
+  height: 3vw;
   right: 48.1vw;
+  background: var(--home);
+  background-size: contain;
+  background-repeat: no-repeat ;
 }
-
 
 .container {
   display: flex;
@@ -16,7 +19,6 @@ hr{
   background-color: var(--border-grey);
   border-color: var(--border-grey);
   margin-top: 10vh;
-  width: 1px;
 }
 
 .fiftyfifty{
@@ -43,7 +45,7 @@ li{
       border-radius: 5px;
       transition: 0.3s ease-in;
       background-color: var(--Amaranth-purple);
-      color: #fff;
+      color: var(--text);
       min-width: 5vw;
       padding: 1vh 1vw;
       &:before{

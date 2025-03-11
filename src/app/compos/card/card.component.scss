@@ -18,7 +18,7 @@ figure{
   }
   .source{
     text-decoration: none;
-    color: white;
+    color: var(--text);
     position: absolute;
     display: flex;
     top: 12vh;
@@ -75,7 +75,7 @@ figure{
     a{
       text-decoration: none;
       margin-left: 3vw;
-      color: white;
+      color: var(--text);
     }
     a::after {
       content: "";
@@ -83,7 +83,7 @@ figure{
       display: block;
       width: 7vw;
       height: 1px;
-      background-color: #fff;
+      background-color: var(--text);
       transform: scaleX(0);
       transition: transform 0.8s ease;
     }

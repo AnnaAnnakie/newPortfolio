@@ -2,7 +2,11 @@
   position: absolute;
   top: 2vh;
   width: 3vw;
+  height: 3vw;
   right: 48.1vw;
+  background: var(--home);
+  background-size: contain;
+  background-repeat: no-repeat ;
 }
 
 .content{
@@ -38,7 +42,7 @@ form{
 }
 button{
   background-color: var(--Rose-red);
-  color: white;
+  color: var(--text);
   border: none;
   border-radius: 5px;
   font-size: 1.2em;
@@ -56,9 +60,9 @@ button{
   input, textarea {
     background: var(--light-grey);
     width: 100%;
-    border: none;
-    color: white;
+    color: var(--text);
     font-size: 1.1em;
+    border : 1px solid var(--border-grey);
     border-radius: 5px;
     min-height: 8vh;
     padding-left: 5px;

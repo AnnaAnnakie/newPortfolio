@@ -51,20 +51,31 @@ footer {
 
 p {
   font-size: 1.2em;
-  color: #666;
+  color: var(--footer);
 }
 a{
-  justify-content: center;
+  position: relative;
+  background: var(--mail);
+  background-size: contain;
+  background-repeat: no-repeat ;
   align-items: center;
-  border: #666666 solid 1.5px;
   height: 3em;
   width: 3em;
   border-radius: 50vh;
-  &:hover{
-    background-color: var(--Claret);
-    img{
-      opacity: 1;
-    }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 4.5%;
+    left: 4.5%;
+    width: 91%;
+    height: 91%;
+    background-color: transparent;
+    border-radius: 50vh;
+    transition: background-color 0.3s ease;
+    z-index: -1;
+  }
+  &:hover::before {
+    background-color: var(--Rose-red);
   }
 }
 img{

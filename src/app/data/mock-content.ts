@@ -39,7 +39,18 @@ export const CONTENT: contentInterface[] = [
                 " pas le genre d'informations qu'on cherche à avoir dans cette section." +
                 " Ici vous pouvez découvrir ce qui me tient à coeur et ce que je fais de" +
                 " mon temps personnel, qui est rarement consacré à l'informatique. ",
-            sectionsLeft: null,
+            sectionsLeft:[
+                {
+                    bigTitle: "Dessin",
+                    subTitleLeftSection: null,
+                    type: "text",
+                    path: null,
+                    list: [
+                        "Je dessine depuis que je suis petite, mais c'est vraiment au collège que j'ai commencé à vraiment m'y intéresser."+
+                            ""
+                    ]
+                },
+            ],
         }
     }
 ]

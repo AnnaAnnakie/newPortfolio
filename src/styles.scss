@@ -1,25 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
-:root {
-  --dark-grey: rgb(30, 28, 28);
-  --light-grey: rgb(55, 48, 50);
-  --border-grey: rgb(125, 95, 100);
 
-  --Chocolate-cosmos: #590D22;
-  --Claret: #800F2F;
-  --Amaranth-purple: #A4133C;
-  --Rose-red: #C9184A;
-  --Crayola: #FF4D6D;
-  --Bright-pink: #FF758F;
-  --Salmon-pink: #FF8FA3;
-  --Cherry-blossom: #FFB3C1;
-  --Pink: #FFCCD5;
-  --Lavender-blush: #FFF0F3;
-  /*
-  --Cordovan: #8c2f39;
-  --Redwood: #B23A48;
-  --Melon: #fcb9b2;
-  --Apricot: #fed0bb;
-  */
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #5a0f0f;
+    --footer: var(--Chocolate-cosmos);
+    --dark-grey: #ffffff;
+    --light-grey: white ;
+    --border-grey: rgb(225, 141, 154);
+
+    --Chocolate-cosmos: #590D22;
+    --Claret: #800F2F;
+    --Amaranth-purple: #A4133C;
+    --Rose-red: #C9184A;
+    --Crayola: #FF4D6D;
+    --Bright-pink: #FF758F;
+    --Salmon-pink: #FF8FA3;
+    --Cherry-blossom: #FFB3C1;
+    --Pink: #FFCCD5;
+    --Lavender-blush: #FFF0F3;
+
+    --home : url("assets/home.png");
+    --mail : url("assets/mailLight.png");
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: white;
+    --footer: #666;
+    --dark-grey: rgb(30, 28, 28);
+    --light-grey: rgb(55, 48, 50);
+    --border-grey: rgb(125, 95, 100);
+
+    --Chocolate-cosmos: #590D22;
+    --Claret: #800F2F;
+    --Amaranth-purple: #A4133C;
+    --Rose-red: #C9184A;
+    --Crayola: #FF4D6D;
+    --Bright-pink: #FF758F;
+    --Salmon-pink: #FF8FA3;
+    --Cherry-blossom: #FFB3C1;
+    --Pink: #FFCCD5;
+    --Lavender-blush: #FFF0F3;
+
+    --home : url("assets/home.svg");
+    --mail : url("assets/mailDark.png");
+  }
 }
 
 @font-face {
@@ -38,7 +64,7 @@
 }
 
 body{
-  color: #fff;
+  color: var(--text);
   padding: 0;
   margin: 0;
   font-family: 'Montserrat', monospace;

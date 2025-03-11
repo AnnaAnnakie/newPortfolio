@@ -1,6 +1,6 @@
 #links {
   z-index: 10;
-  color: white;
+  color: var(--text);
   background: linear-gradient(180deg,var(--Claret),90%,var(--Crayola));
   height: 95vh;
   width: 5vw;
@@ -25,7 +25,7 @@
 hr {
   height: 15vh;
   width: 0.01vw;
-  background-color: white;
+  background-color: var(--text);
 }
 
 ul {
