@@ -10,8 +10,10 @@ import {RouterLink} from "@angular/router";
 })
 export class MarkbookComponent {
   menuOpen = false;
+  cancelAnimation = false;
 
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
+    this.cancelAnimation = true;
   }
 }

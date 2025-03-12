@@ -18,6 +18,8 @@
   }
   &.open{
     top: 0;
+  }
+  &.anim{
     animation: none;
   }
 }
