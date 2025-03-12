@@ -18,8 +18,11 @@
             </div>
         </div>
     </div>
-    <div class="enSavoirPlus" *ngIf="projet.link != null">
-        <a href="{{projet.link}}" target="_blank">En savoir plus </a>
+    <div *ngIf="projet.status != null" class="status"  >
+        <p [ngClass]="{'fini': isFinished}">{{projet.status}}</p>
+    </div>
+    <div class="enSavoirPlus" *ngIf="projet.infos != null">
+        <a href="{{projet.infos.link}}" target="_blank">{{projet.infos.intitule}} </a>
         <p>&#10140;</p>
     </div>
 </figure>

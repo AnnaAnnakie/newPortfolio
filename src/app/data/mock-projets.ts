@@ -3,7 +3,10 @@ import {ProjectInterface} from "./projetInterface";
 export const PROJETS: ProjectInterface[] = [
     {
         name: "Prologin",
-        link: "https://prologin.org/",
+        infos: {
+            link:"https://prologin.org/",
+            intitule: "En savoir plus"
+        },
         image: {
             image:'Prologin',
             source: "https://www.facebook.com/stagegirlscancode/",
@@ -20,7 +23,7 @@ export const PROJETS: ProjectInterface[] = [
     },
     {
         name: "Stage STMicroelectronics",
-        link: null,
+        infos: null,
         image: {
             image:"stmicroelectronics",
             source: null,
@@ -38,7 +41,10 @@ export const PROJETS: ProjectInterface[] = [
     },
     {
         name: "Soutien +",
-        link: null,
+        infos: {
+            link:"http://82.66.239.16/",
+            intitule: "Voir l'application",
+        },
         image: {
             image:"soutien",
             source: null,
@@ -46,19 +52,19 @@ export const PROJETS: ProjectInterface[] = [
         },
         description :"Dans le cadre de ma 3e année de BUT Informatique, nous devons réalisé en équipe de 7 une " +
             "application collaborative facilitant la gestion des personnes agées par des aidants, personnel médicaux etc... ",
-        intitule: "Connaissances mises à profit",
+        intitule: "Langages utilisés",
         complement:{
             type: "img",
             list: ["Angular", "SpringBoot"]
         },
-        status : "en cours",
+        status : "En cours",
     }
 ]
 
 export const PERSO: ProjectInterface[] = [
     {
         name: "Animation 2D",
-        link: null,
+        infos: null,
         image:{
             image:"Live2D",
             source: null,
@@ -75,7 +81,10 @@ export const PERSO: ProjectInterface[] = [
     },
     {
         name:"Twitch",
-        link: "https://www.twitch.tv/anna_annakie",
+        infos: {
+            link: "https://www.twitch.tv/anna_annakie",
+            intitule: "Voir la chaîne",
+        },
         image:{
             image:"Twitch",
             source: null,
@@ -95,7 +104,7 @@ export const PERSO: ProjectInterface[] = [
 export const PLACEHOLDER: ProjectInterface[] = [
     {
         name: "",
-        link: null,
+        infos: null,
         image: {
             image: "placeholder",
             source: null,

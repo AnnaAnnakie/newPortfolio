@@ -44,6 +44,28 @@ figure{
   .icon{
     width: 8vh;
   }
+  .status{
+    margin: 0 1vw 1vh 0;
+    position: relative;
+    p{
+      text-align: right;
+      padding-right: 2vh;
+      margin: 0;
+    }
+    p::before{
+      content: "";
+      background-color: red;
+      position: absolute;
+      width: 1.5vh;
+      height: 1.5vh;
+      border-radius: 100%;
+      margin-top: 0.5vh;
+      right: 0;
+    }
+    .fini::before{
+      background-color: green;
+    }
+  }
   .content{
     display: flex;
     padding: 1vw;
