@@ -12,6 +12,10 @@
 .content{
   display: flex;
   flex-direction: row;
+  #info{
+    font-style: italic;
+    font-size: 1.1em;
+  }
 }
 
 .explications{
@@ -49,6 +53,9 @@ button{
   height: 3.5em;
   &:disabled{
     background-color: var(--border-grey);
+  }
+  &:active{
+    background-color: var(--Bright-pink);
   }
 }
 
