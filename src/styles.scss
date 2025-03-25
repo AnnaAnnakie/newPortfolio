@@ -22,6 +22,7 @@
     --home : url("assets/home.png");
     --mail : url("assets/mailLight.png");
     --status : red;
+    --theme: light;
   }
 }
 
@@ -47,6 +48,7 @@
     --home : url("assets/home.svg");
     --mail : url("assets/mailDark.png");
     --status : red;
+    --theme: dark;
   }
 }
 
@@ -63,6 +65,10 @@
   font-family: 'Montserrat';
   src: url('assets/fonts/montserrat.bold.ttf') format('opentype');
   font-weight: bold;
+}
+
+html{
+  color-scheme: var(--theme) ;
 }
 
 body{
