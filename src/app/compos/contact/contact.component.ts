@@ -1,24 +1,28 @@
 import { Component } from '@angular/core';
 import {RouterLink} from "@angular/router";
-import {FormsModule} from "@angular/forms";
-import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-contact',
   imports: [
     RouterLink,
-    FormsModule
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  message: string = '';
   mail: string = '';
+  message: string = '';
+  regex: RegExp = /^[\w.-]+@([\w-]+\.)+[\w-]+$/;
 
-  regex = new RegExp('^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]+$');
+  updateMail(event: Event): void {
+    this.mail = (event.target as HTMLInputElement).value;
+  }
 
-  isValid(){
-    return !(this.message && this.regex.test(this.mail));
+  updateMessage(event: Event): void {
+    this.message = (event.target as HTMLTextAreaElement).value;
+  }
+
+  isValid(): boolean {
+    return !(this.message.trim().length > 0 && this.regex.test(this.mail));
   }
 }

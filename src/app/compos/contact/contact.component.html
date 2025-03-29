@@ -11,21 +11,22 @@
             Si rien ne se passe, vous pouvez me contacter directement via mon mail : anais.marchetti&#64;etu.univ-grenoble-alpes.fr. Merci pour votre compréhension.
         </p>
     </div>
-    <form action="https://formspree.io/f/xdkapzkq" method="POST">
+    <form action="https://formspree.io/f/xdkapzkq" method="post">
         <label class="field">
             Mail *
-            <input [(ngModel)]="mail" type="email" name="email" placeholder="example@email.com">
+            <input id="mail" type="email" name="email" placeholder="example@email.com"
+                   (input)="updateMail($event)">
         </label>
         <label class="field">
             Message *
-            <textarea [(ngModel)]="message" name="message" placeholder="..."></textarea>
+            <textarea id="message" name="message" placeholder="..."
+                      (input)="updateMessage($event)"></textarea>
         </label>
         <div id="reponse">
             <input type="checkbox" name="reponse">
-            <label for="reponse"> Je souhaiterais être recontacté</label>
+            <label> Je souhaiterais être recontacté</label>
         </div>
 
-        <!-- your other form fields go here -->
         <button type="submit" [disabled]="isValid()">ENVOYER</button>
     </form>
 </div>
