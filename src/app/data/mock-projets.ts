@@ -1,7 +1,26 @@
 import {ProjectInterface} from "./projetInterface";
 
 export const PROJETS: ProjectInterface[] = [
-    {
+        {
+        name: "Stage CEA",
+        infos: null,
+        image: {
+            image:'placeholder',
+            source: null,
+            afficher: null,
+        },
+        description:"La mission de ce stage était de piloter un outil grâce à une application web." +
+        " Cet outil se pilotait initialement grâce à une application Windows, il y avait donc un existant à migrer "+
+        "en prenant en compte un usage en réseau local.",
+        intitule: "Infos complémentaires",
+        complement: {
+            type: "text",
+            list: ["L'application a été développé en Django. Un serveur local intégré dans un Raspberry Pi permet d'avoir accès à "+
+                "l'application depuis un téléphone personnel pour piloter l'outil."
+            ]
+        },
+        status : null,
+    },{
         name: "Prologin",
         infos: {
             link:"https://prologin.org/",
