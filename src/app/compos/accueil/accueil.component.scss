@@ -30,34 +30,48 @@ h2{
 .div2{
   flex-direction: column;
   width: 42em;
+  flex-direction: row;
+  width: 45%;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   p{
     text-align: justify;
-    width: calc(32vw - 18vh);
+    width: 75%;
   }
   button{
     background-color: var(--Rose-red);
+    width: 20%;
+    aspect-ratio: 1/1;
     width: 35em;
     height: 6em;
     border: none;
-    border-radius: 10vh;
+    border-radius: 100%;
     &.rightb:hover .right{
       transform: rotate(-45deg) translate(0.5vh, 0.5vh);
+    }
+    &.leftb:hover .left{
+      transform: rotate(135deg) translate(0.5vh, 0.5vh);
     }
   }
 }
 
 .arrow {
   border: solid white;
+  border-width: 0 1rem 1rem 0;
   border-width: 0 1em 1em 0;
   display: inline-block;
+  padding: 12%;
   padding: 1em;
   &.right {
     transform: rotate(-45deg);
     transition: transform 0.3s ease;
     -webkit-transform: rotate(-45deg);
+  }
+  &.left {
+    transform: rotate(135deg);
+    transition: transform 0.3s ease;
+    -webkit-transform: rotate(135deg);
   }
 }
 
@@ -70,6 +84,7 @@ h2{
   }
   .redirects{
     display: flex;
+    flex-direction: column-reverse;
     padding: 10vh 3vw 0 3vw;
   }
 
@@ -83,5 +98,8 @@ h2{
     &, p{
       width: 94vw;
     }
+  }
+  .div1{
+    flex-direction: column-reverse;
   }
 }

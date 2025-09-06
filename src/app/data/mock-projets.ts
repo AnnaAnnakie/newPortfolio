@@ -2,6 +2,44 @@ import {ProjectInterface} from "./projetInterface";
 
 export const PROJETS: ProjectInterface[] = [
     {
+        name: "Stage CEA",
+        infos: null,
+        image: {
+            image:'CEA',
+            source: null,
+            afficher: null,
+        },
+        description:"La mission de ce stage était de piloter un outil grâce à une application web." +
+        " Cet outil se pilotait initialement grâce à une application Windows, il y avait donc un existant à migrer "+
+        "en prenant en compte un usage en réseau local.",
+        intitule: "Infos complémentaires",
+        complement: {
+            type: "text",
+            list: ["L'application a été développé en Django. Un serveur local intégré dans un Raspberry Pi permet d'avoir accès à "+
+                "l'application depuis un téléphone personnel pour piloter l'outil."
+            ]
+        },
+        status : null,
+    },        {
+        name: "OutOfBounds4",
+        infos: null,
+        image: {
+            image:'OutOfBounds',
+            source: null,
+            afficher: null,
+        },
+        description:"L'objectif était de réaliser un jeu en 4 jours et 4 nuits avec pour thème «Le merveilleux monde de l'IUT2». La seule contrainte" +
+        " technique étant l'utilisation de la librairie pygame de Python.",
+        intitule: "Gameplay",
+        complement: {
+            type: "text",
+            list: ["Dans OutOfBounds 4, nous incarnons monsieur Blanchon, enseignant au département informatique." +
+                " Le réseau informatique de l'IUT2 est infesté par des virus qui ont pris vie à cause des bugs des mauvais codes des étudiants."+
+                " Pour sauver l'IUT2, monsieur Blanchon plonge donc dans le réseau pour affronter les virus."
+            ]
+        },
+        status : null,
+    },{
         name: "Prologin",
         infos: {
             link:"https://prologin.org/",
@@ -57,7 +95,7 @@ export const PROJETS: ProjectInterface[] = [
             type: "img",
             list: ["Angular", "SpringBoot"]
         },
-        status : "En cours",
+        status : null,
     }
 ]
 
