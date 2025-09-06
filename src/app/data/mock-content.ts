@@ -3,7 +3,7 @@ import {PROJETS, PERSO} from "./mock-projets";
 
 export const CONTENT: contentInterface[] = [
     {
-        id: "pro",
+        id: "info",
         content:{
             titleRightSide: "Mes expériences",
             cardList: PROJETS,
