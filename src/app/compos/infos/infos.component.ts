@@ -9,12 +9,12 @@ import {contentInterface} from "../../data/contentInterface";
 
 @Component({
   selector: 'app-infos',
-  imports: [
-    NgFor,
-    NgIf,
-    CardComponent,
-    RouterLink,
-  ],
+    imports: [
+        NgFor,
+        NgIf,
+        CardComponent,
+        RouterLink,
+    ],
   templateUrl: './infos.component.html',
   styleUrl: './infos.component.scss'
 })

@@ -1,13 +1,25 @@
-<div class="carousel">
-    <ng-container *ngFor="let card of cardList; let i = index">
-        <app-card *ngIf="i === currentSlide" [projet] = card [class.slide]="true" ></app-card>
-    </ng-container>
+<div class="carousel-container">
+    <nav>
+        <button class="nav-btn left" (click)="prev()">❮</button>
 
-    <!-- controls -->
-    <button class="control prev" (click)="onPreviousClick()">
-        <span class="arrow left"></span>
-    </button>
-    <button class="control next" (click)="onNextClick()">
-        <span class="arrow right"></span>
-    </button>
+        <div class="indicator-dots">
+        <span
+                *ngFor="let card of cardList; let i = index"
+                class="dot"
+                [class.active]="i === currentIndex">
+        </span>
+        </div>
+
+        <button class="nav-btn right" (click)="next()">❯</button>
+    </nav>
+
+    <div class="carousel-wrapper"
+         (touchstart)="onTouchStart($event)"
+         (touchend)="onTouchEnd($event)">
+        <div *ngFor="let projet of cardList; let i = index"
+                class="card"
+                [ngClass]="getCardClass(i)">
+            <app-card [projet]="projet"></app-card>
+        </div>
+    </div>
 </div>

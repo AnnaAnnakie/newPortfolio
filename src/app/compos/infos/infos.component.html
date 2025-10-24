@@ -30,7 +30,6 @@
     <div class="fiftyfifty" id="bulles">
         <h2>{{contents.content.titleRightSide}}</h2>
         <div id="figures">
-            <!--<app-carousel [cardList]="contents.content.cardList"></app-carousel>-->
             <ul>
                 <li *ngFor="let card of contents.content.cardList" class="list">
                     <app-card [projet] = card></app-card>
